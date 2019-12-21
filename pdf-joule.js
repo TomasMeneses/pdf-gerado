@@ -4,6 +4,18 @@ var imgData2 = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAMCAgMCA
 
 var doc = new jsPDF();
 
+var cliente = {
+    nome: "Tomás Meneses",
+    cpf: "99999999999",
+    cnjp: '',
+    estado: "PE",
+    tecnologia: "Tecnologia muito massa",
+    emissao: "emitida",
+    controle: "descontrolado",
+    emissor: "Ciclano de Tal"
+
+}
+
 doc.setFontSize(14);
 doc.addImage(imgData, 'JPEG', 15, 40, 180, 180);
 doc.text("Cliente:", 20, 230);
@@ -14,9 +26,26 @@ doc.text("Emissão:", 20, 254);
 doc.text("Controle:", 20, 260);
 doc.text("Emissor:", 20, 266);
 
+//Variáveis
+
+doc.text(cliente.nome, 50, 230);
+if (cliente.cpf) {
+    doc.text(cliente.cpf, 50, 236);
+} else {
+    doc.text(cliente.cnpj, 50, 236);
+}
+doc.text(cliente.estado, 50, 242);
+doc.text(cliente.tecnologia, 50, 248);
+doc.text(cliente.emissao, 50, 254);
+doc.text(cliente.controle, 50, 260);
+doc.text(cliente.emissor, 50, 266);
+
+
+
 doc.setFontSize(10);
 doc.text("Rua itambé, nº 262", 95, 280);
 doc.text("CNPJ: 31.012.459/0001-39", 90, 284);
 doc.text("F: (81) 995212354", 95, 288);
 
 doc.addImage(imgData2, 'JPEG', 150, 240, 40, 50);
+//doc.autoPrint()
