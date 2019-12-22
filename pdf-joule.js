@@ -53,6 +53,21 @@ var garantias = {
     otimizador: '25'
 }
 
+var kitData = {
+    tecnologia: 'microinversor',
+    estrutura: 'metálico',
+    modulo: {
+        potencia: '20kwp',
+        fabricante: 'SolarAlgo',
+        quantidade: '15'
+    },
+    inversor: {
+        potencia: '12kwp',
+        fabricante: 'Fabricante Roxedo',
+        quantidade: '12'
+    }
+}
+
 doc.setFontSize(14);
 doc.addImage(imgData, 'JPEG', 15, 40, 180, 180);
 doc.text("Cliente:", 20, 230);
@@ -126,20 +141,7 @@ doc.text(garantias.otimizador, 140, 250);
 
 doc.addPage();
 
-var kitData = {
-    tecnologia: 'microinversor',
-    estrutura: 'metálico',
-    modulo: {
-        potencia: '20kwp',
-        fabricante: 'SolarAlgo',
-        quantidade: '15'
-    },
-    inversor: {
-        potencia: '12kwp',
-        fabricante: 'Fabricante Roxedo',
-        quantidade: '12'
-    }
-}
+
 //Pagina 3
 doc.addImage(imgPage3, 'JPEG', 5, 0, 200, 300);
 
