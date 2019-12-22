@@ -98,12 +98,12 @@ doc.text(sistemaFotovoltaico.an, 140, 99);
 
 
 //financeiro 
-doc.text(financeiro.pt, 140, 173);
-doc.text(financeiro.pt, 140, 178);
-doc.text(financeiro.pkWh, 140, 183);
-doc.text(financeiro.e1, 140, 188);
-doc.text(financeiro.ec1, 140, 183);
-doc.text(financeiro.pay, 140, 188);
+doc.text(financeiro.pt, 140, 122);
+doc.text(financeiro.pkWh, 140, 128);
+doc.text(financeiro.e1, 140, 134);
+doc.text(financeiro.ec1, 140, 138);
+doc.text(financeiro.pay, 140, 143);
+doc.text(financeiro.realPorWp, 140, 148);
 
 
 //prazos
@@ -113,11 +113,14 @@ doc.text('3', 140, 183);
 doc.text('30', 140, 188);
 doc.text('12', 140, 194);
 doc.text('1', 140, 199);
+doc.text('30', 140, 210);
 
 
 //garantias
 
-doc.text(garantias.instalacao, 140, 183);
-doc.text(garantias.inversor, 140, 188);
-doc.text(garantias.modulo, 140, 194);
-doc.text(garantias.otimizador, 140, 199);
+
+
+doc.text(garantias.instalacao, 140, 234);
+doc.text(garantias.inversor, 140, 239);
+doc.text(garantias.modulo, 140, 245);
+doc.text(garantias.otimizador, 140, 250);
