@@ -19,6 +19,39 @@ var cliente = {
 
 }
 
+
+var sistemaFotovoltaico = {
+    psisReal: "17",
+    gp: "2313",
+    qtModulos: "43",
+    an: "104"
+}
+
+var financeiro = {
+    pt: '78000',
+    pkWh: '0,79',
+    e1: '1679,9',
+    ec1: '19 717 999',
+    pay: '5',
+    realPorWp: '4,55'
+}
+
+var financeiro = {
+    pt: '78000',
+    pkWh: '0,79',
+    e1: '1679,9',
+    ec1: '19 717 999',
+    pay: '5',
+    realPorWp: '4,55'
+}
+
+var garantias = {
+    instalacao: '1',
+    inversor: '12',
+    modulo: '10',
+    otimizador: '25'
+}
+
 doc.setFontSize(14);
 doc.addImage(imgData, 'JPEG', 15, 40, 180, 180);
 doc.text("Cliente:", 20, 230);
@@ -56,9 +89,35 @@ doc.addPage();
 
 //Pagina 2
 doc.addImage(imgPage2, 'JPEG', 5, 0, 200, 300);
+
+//sistema fotovoltaico
+doc.text(sistemaFotovoltaico.psisReal, 140, 83);
+doc.text(sistemaFotovoltaico.gp, 140, 88);
+doc.text(sistemaFotovoltaico.qtModulos, 140, 93);
+doc.text(sistemaFotovoltaico.an, 140, 99);
+
+
+//financeiro 
+doc.text(financeiro.pt, 140, 173);
+doc.text(financeiro.pt, 140, 178);
+doc.text(financeiro.pkWh, 140, 183);
+doc.text(financeiro.e1, 140, 188);
+doc.text(financeiro.ec1, 140, 183);
+doc.text(financeiro.pay, 140, 188);
+
+
+//prazos
 doc.text('4', 140, 173);
 doc.text('7', 140, 178);
 doc.text('3', 140, 183);
 doc.text('30', 140, 188);
 doc.text('12', 140, 194);
 doc.text('1', 140, 199);
+
+
+//garantias
+
+doc.text(garantias.instalacao, 140, 183);
+doc.text(garantias.inversor, 140, 188);
+doc.text(garantias.modulo, 140, 194);
+doc.text(garantias.otimizador, 140, 199);
