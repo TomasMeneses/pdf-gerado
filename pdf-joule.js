@@ -107,6 +107,7 @@ doc.addPage();
 doc.addImage(imgPage2, 'JPEG', 5, 0, 200, 300);
 
 //sistema fotovoltaico
+//Vem do calculo
 doc.text(sistemaFotovoltaico.psisReal, 140, 83);
 doc.text(sistemaFotovoltaico.gp, 140, 88);
 doc.text(sistemaFotovoltaico.qtModulos, 140, 93);
@@ -114,6 +115,7 @@ doc.text(sistemaFotovoltaico.an, 140, 99);
 
 
 //financeiro 
+//Vem do calculo
 doc.text(financeiro.pt, 140, 122);
 doc.text(financeiro.pkWh, 140, 128);
 doc.text(financeiro.e1, 140, 133);
@@ -123,6 +125,7 @@ doc.text(financeiro.realPorWp, 140, 149);
 
 
 //prazos
+//Prazos são padrão
 doc.text('4', 140, 173);
 doc.text('7', 140, 178);
 doc.text('3', 140, 184);
