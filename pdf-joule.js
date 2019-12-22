@@ -50,8 +50,15 @@ doc.text("Rua itambé, nº 262", 95, 280);
 doc.text("CNPJ: 31.012.459/0001-39", 90, 284);
 doc.text("F: (81) 995212354", 95, 288);
 
+doc.setFontSize(12);
 doc.addImage(imgData2, 'JPEG', 150, 240, 40, 50);
-//doc.autoPrint()
 doc.addPage();
-doc.addImage(imgPage2, 'JPEG', 0, 0, 200, 300);
-doc.text('Do you like that?', 20, 20);
+
+//Pagina 2
+doc.addImage(imgPage2, 'JPEG', 5, 0, 200, 300);
+doc.text('4', 140, 173);
+doc.text('7', 140, 178);
+doc.text('3', 140, 183);
+doc.text('30', 140, 188);
+doc.text('12', 140, 194);
+doc.text('1', 140, 199);
